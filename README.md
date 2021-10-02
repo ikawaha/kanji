@@ -1,14 +1,15 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/ikawaha/encoding.svg)](https://pkg.go.dev/github.com/ikawaha/encoding)
-![Go](https://github.com/ikawaha/encoding/workflows/Go/badge.svg)
+Kanji
+===
 
-# encoding
+日本語漢字に関するパッケージです。
 
-This is a library related to character encoding.
+## 常用漢字
 
-|package| description|
-|:---|:---|
-| [jisx0208](https://github.com/ikawaha/encoding/tree/main/jisx0208) | [JIS X 0208](https://zenn.dev/ikawaha/articles/20210116-ab1ac4a692ae8bb4d9cf) (JIS 基本漢字) |
-| [kanji](https://github.com/ikawaha/encoding/tree/main/kanji) | kanji package, including [the regular-use kanji characters](https://zenn.dev/ikawaha/articles/20210801-e995d788c30ec1) (常用漢字表), etc. |
+常用漢字は `一般の社会生活において現代の国語を書き表すための漢字使用の目安` として示される漢字の集合で、このパッケージでは [平成22年内閣告示第2号 (2010年11月30日)](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/index.html) として告示されているものを対象にしています。
 
----
-MIT
+このパッケージで「常用漢字」は、標準字体 2136字、旧字体 364字、許容字体 5字からなる集合として扱っています。標準字体、旧字体、許容字体のそれぞれを `unicode.RangeTable` として定義していますので直接利用可能です。また、これらを扱う関数も定義されています。詳しくは [ドキュメント](https://pkg.go.dev/github.com/ikawaha/encoding/kanji) を参照してください。
+
+## 人名用漢字
+
+人名用漢字は、常用漢字以外で子の名に使える漢字の集合のことです。法務省のページに [子の名に使える漢字](http://www.moj.go.jp/MINJI/minji86.html) として定義されています。 人名用漢字を `unicode.RangeTable` として定義していますので直接利用可能です。また、人名に使える漢字であるかどうか（常用漢字であるかまたは人名用漢字であるか）をチェックする関数を用意しています。詳しくは [ドキュメント](https://pkg.go.dev/github.com/ikawaha/encoding/kanji) を参照してください。
+
