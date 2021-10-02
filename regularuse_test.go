@@ -12,7 +12,7 @@ func TestIs_Golden(t *testing.T) {
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-	defer f.Close()
+	defer f.Close() //nolint: gosec
 	s := bufio.NewScanner(f)
 	var line int
 	for s.Scan() {

@@ -4,6 +4,7 @@ import (
 	"unicode"
 )
 
+// DesignatedForPersonalNamesRangeTable is the designated kanji set for personal names.
 var DesignatedForPersonalNamesRangeTable = &unicode.RangeTable{
 	R16: []unicode.Range16{
 		{Lo: 0x4E11, Hi: 0x4E11, Stride: 1},

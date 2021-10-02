@@ -1,3 +1,3 @@
-module github.com/ikawaha/encoding
+module github.com/ikawaha/kanji
 
-go 1.16
+go 1.17
