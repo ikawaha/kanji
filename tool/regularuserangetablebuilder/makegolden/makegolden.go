@@ -26,6 +26,8 @@ func OpenGoldenSrc(path string) (io.ReadCloser, error) {
 	return res.Body, nil
 }
 
+// note. このやり方だと旧字体のいくつかが適当に変換されて新字体になってしまう
+// こちらの表と比べる必要があった https://www.asahi-net.or.jp/~ax2s-kmtn/ref/old_chara.html
 func MakeGolden(w io.Writer, werr io.Writer) error {
 	r, err := OpenGoldenSrc(jyouyouHTML)
 	if err != nil {
