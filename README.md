@@ -16,7 +16,7 @@ This package is a library for the Japanese kanji, including the regular-use kanj
 
 ## 旧字体 -> 新字体 変換
 
-旧字体を新字体に変換するために strings.Replacer を用意しています。
+旧字体を新字体に変換するための `strings.Replacer` を用意しています。
 
 ---
 MIT
