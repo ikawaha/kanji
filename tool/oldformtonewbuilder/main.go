@@ -39,7 +39,7 @@ func run() error {
 		if len(a) != 4 {
 			return fmt.Errorf("invalid golden file format, line=%d, %s", line, l)
 		}
-		b.WriteString(`"\u` + a[0] + `", "\u` + a[2] + `", //` + a[1] + ", " + a[3] + "\n")
+		b.WriteString(`"\u` + a[0] + `", "\u` + a[2] + `", // ` + a[1] + ", " + a[3] + "\n")
 	}
 	if err := s.Err(); err != nil {
 		return err
