@@ -16,6 +16,10 @@ linters:
     - exhaustive
     - asciicheck
     - scopelint
+    - gosec
+    - structcheck
+    - varcheck
+    - deadcode
   presets:
     - bugs
     - unused
