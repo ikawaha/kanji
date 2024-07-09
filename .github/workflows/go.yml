@@ -24,7 +24,7 @@ jobs:
       - name: Set up Go 1.x
         uses: actions/setup-go@v5.0.1
         with:
-          go-version-file: go.mod
+          go-version-file: src/github.com/ikawaha/kanji/go.mod
 
       - name: Build
         run: go build -v ./...
