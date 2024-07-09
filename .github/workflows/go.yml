@@ -22,7 +22,7 @@ jobs:
           path: src/github.com/ikawaha/kanji
 
       - name: Set up Go 1.x
-        uses: actions/setup-go@@v5.0.1
+        uses: actions/setup-go@v5.0.1
         with:
           go-version-file: go.mod
 
