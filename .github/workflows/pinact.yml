@@ -20,7 +20,7 @@ jobs:
           go-version-file: src/github.com/ikawaha/kanji/go.mod
 
       - name: pinact
-        run: go run -tool pinact run
+        run: go tool pinact run
         working-directory: src/github.com/ikawaha/kanji
 
       - name: commit changes
