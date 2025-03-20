@@ -1,8 +1,8 @@
 name: pinact
 
 on:
+  workflow_dispatch:
   pull_request:
-    workflow_dispatch:
     paths:
       - '.github'
 jobs:
