@@ -2,6 +2,7 @@ name: pinact
 
 on:
   pull_request:
+    workflow_dispatch:
     paths:
       - '.github'
 jobs:
