@@ -1,6 +1,8 @@
 module rangerablebuilder
 
-go 1.17
+go 1.23.4
+
+toolchain go1.24.1
 
 replace github.com/ikawaha/kanji => ./../..
 

@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        path: src/github.com/ikawaha/kanji
         with:
           ref: ${{ github.head_ref }}
 
