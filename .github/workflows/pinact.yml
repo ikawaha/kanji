@@ -5,22 +5,23 @@ on:
     paths:
       - '.github'
 jobs:
-  steps:
-    - uses: actions/checkout@v4
-      with:
-        ref: ${{ github.head_ref }}
+  pinact:
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
-    - uses: actions/setup-go@v5.3.0
-      with:
-        go-version-file: src/github.com/ikawaha/kanji/go.mod
+      - uses: actions/setup-go@v5.3.0
+        with:
+          go-version-file: src/github.com/ikawaha/kanji/go.mod
 
-    - name: pinact
-      run: go run -tool pinact run
-      working-directory: src/github.com/ikawaha/kanji
+      - name: pinact
+        run: go run -tool pinact run
+        working-directory: src/github.com/ikawaha/kanji
 
-    - name: commit changes
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: pinact
-        branch: ${{ github.head_ref }}
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: pinact
+          branch: ${{ github.head_ref }}
 
