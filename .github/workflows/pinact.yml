@@ -8,7 +8,7 @@ on:
 jobs:
   pinact:
     permissions:
-      workflows: write
+      contents: write
     name: pinact
     runs-on: ubuntu-latest
     steps:
