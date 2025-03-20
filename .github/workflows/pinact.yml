@@ -12,16 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: src/github.com/ikawaha/kanji
           ref: ${{ github.head_ref }}
 
       - uses: actions/setup-go@v5.3.0
         with:
-          go-version-file: src/github.com/ikawaha/kanji/go.mod
+          go-version-file: go.mod
 
       - name: pinact
         run: go tool pinact run
-        working-directory: src/github.com/ikawaha/kanji
 
       - name: commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
