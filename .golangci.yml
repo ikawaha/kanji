@@ -1,34 +1,6 @@
 version: "2"
 linters:
   default: all
-#  enable:
-#    - asasalint
-#    - bidichk
-#    - bodyclose
-#    - contextcheck
-#    - durationcheck
-#    - errchkjson
-#    - errorlint
-#    - gocheckcompilerdirectives
-#    - gochecksumtype
-#    - gocyclo
-#    - gosmopolitan
-#    - loggercheck
-#    - makezero
-#    - musttag
-#    - nilerr
-#    - nilnesserr
-#    - noctx
-#    - protogetter
-#    - reassign
-#    - recvcheck
-#    - revive
-#    - rowserrcheck
-#    - spancheck
-#    - sqlclosecheck
-#    - testifylint
-#    - unparam
-#    - zerologlint
   disable:
     - cyclop      # use gocyclo instead
     - err113      # use errcheck instead
