@@ -1,54 +1,6 @@
 version: "2"
 linters:
-  default: all
-  disable:
-    - cyclop      # use gocyclo instead
-    - err113      # use errcheck instead
-    - exhaustruct # allow omission of structure fields
-    - forbidigo
-    - gochecknoglobals # allow global variables
-    - gocognit    # use gocyclo instead
-    - godot       # allow comment end not in period
-    - lll         # allow long lines
-    - mnd         # allow magic number
-    - nlreturn    # allow returning with no blank line before
-    - paralleltest
-    - testpackage
-    - varnamelen  # I love short variable names
-    - wrapcheck
-    - wsl         # Add or remove empty lines.
+  default: standard
   settings:
-    revive:
-      rules:
-        - name: package-comments
-          disabled: true
     gocyclo:
       min-complexity: 15
-    errcheck:
-      exclude-functions:
-        - (*os.File).Close
-  exclusions:
-    generated: lax
-    rules:
-      - linters:
-          - gocyclo
-          - gosmopolitan
-          - gocritic
-          - nestif
-        path: _test\.go
-    paths:
-      - third_party$
-      - builtin$
-      - examples$
-formatters:
-  enable:
-    - gci
-    - gofmt
-    - gofumpt
-    - goimports
-  exclusions:
-    generated: lax
-    paths:
-      - third_party$
-      - builtin$
-      - examples$
