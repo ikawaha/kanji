@@ -16,6 +16,11 @@ This package is a library for the Japanese kanji, including the regular-use kanj
 
 人名用漢字は、常用漢字以外で子の名に使える漢字の集合のことです。法務省のページに [子の名に使える漢字](http://www.moj.go.jp/MINJI/minji86.html) として定義されています。 人名用漢字を `unicode.RangeTable` として定義していますので直接利用可能です。また、人名に使える漢字であるかどうか（常用漢字であるかまたは人名用漢字であるか）をチェックする関数を用意しています。詳しくは [ドキュメント](https://pkg.go.dev/github.com/ikawaha/kanji) または [ブログ](https://zenn.dev/ikawaha/articles/20210801-e995d788c30ec1) を参照してください。
 
+| 日付 | 内容 |
+|------|------|
+| 2026年6月26日 | 「勒」(U+52D2) を追加（計864字）|
+| 2017年9月25日 | 「渾」を追加（計863字）|
+
 ## 旧字体 -> 新字体 変換
 
 旧字体を新字体に変換するための `strings.Replacer` を用意しています。

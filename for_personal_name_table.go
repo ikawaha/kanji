@@ -66,6 +66,7 @@ var DesignatedForPersonalNamesRangeTable = &unicode.RangeTable{
 		{Lo: 0x528D, Hi: 0x528D, Stride: 1},
 		{Lo: 0x52AB, Hi: 0x52AB, Stride: 1},
 		{Lo: 0x52C1, Hi: 0x52C1, Stride: 1},
+		{Lo: 0x52D2, Hi: 0x52D2, Stride: 1},
 		{Lo: 0x52F3, Hi: 0x52F3, Stride: 1},
 		{Lo: 0x52FA, Hi: 0x52FA, Stride: 1},
 		{Lo: 0x52FF, Hi: 0x52FF, Stride: 1},
